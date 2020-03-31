@@ -1,0 +1,87 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(178deg, rgba(0,0,0,0.6), rgba(0,0,0,1));
+  height: 10vh;
+}
+
+nav h1 {
+  color: #f5f6fa;
+  margin: 0;
+  margin-left: 20px;
+  align-self: center;
+}
+
+.navList{
+  align-self: center;
+  margin-right: 20px;
+}
+
+.navList li {
+  color: #f5f6fa;
+  list-style: none;
+  display: inline;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: #f5f6fa;
+}
+
+/* Target all children in '.navList li' but not the last-child */
+.navList li:not(:last-child){
+  margin-right: 10px;
+}
+
+main {
+  /* display: flex; */
+  height: 90vh;
+  background-color: blanchedalmond;
+  overflow: scroll;
+  flex-direction: column;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 90vh; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  margin-top: 10vh;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 10px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

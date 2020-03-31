@@ -1,0 +1,12 @@
+.home {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
