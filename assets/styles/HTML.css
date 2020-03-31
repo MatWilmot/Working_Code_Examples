@@ -2,22 +2,10 @@
   margin: 20px 20px 0px 20px;
 }
 
-.text-formatting-header h1 {
-  margin: 0;
-}
-
 .text-formatting-body {
   margin: 20px;
 }
 
 .text-formatting-body p {
   margin-right: 20px;
-}
-
-.text-formatting-body h3 {
-  margin: 0px 20px 10px 0px;
-}
-
-.text-formatting-body h2 {
-  margin: 20px 20px 5px 0px;
 }
