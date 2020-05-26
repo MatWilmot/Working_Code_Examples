@@ -1,81 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom style sheets -->
+    <link rel="stylesheet" href="./assets/styles/nav.css" />
+    <link rel="stylesheet" href="./assets/styles/HTML.css" />
+    <title>HTML</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- custom style sheets -->
-  <link rel="stylesheet" href="./assets/styles/nav.css">
-  <link rel="stylesheet" href="./assets/styles/HTML.css">
-  <title>HTML</title>
-</head>
+  <body>
+    <nav>
+      <h1>Stuff What I Learned - HTML</h1>
 
-<body>
-  <!-- div is a section of a webpage -->
-  <nav>
+      <!-- ul is an unordered list -->
+      <ul class="navList">
+        <!-- li is a list item -->
+        <li><a href="./index.html"> Home </a></li>
+        <li><a href="./HTML.html"> HTML </a></li>
+        <li><a href="./CSS.html"> CSS </a></li>
+        <li><a href="./JS.html"> JavaScript </a></li>
+      </ul>
+      <!-- Side navigation -->
+      <aside class="sidenav">
+        <a href="#text-formatting">Text Formatting</a>
+        <a href="#anchor-tags">Anchor Tags</a>
+        <a href="#semantics">Semantics</a>
+        <a href="#class-id">Class & ID</a>
+      </aside>
+    </nav>
 
-    <!-- h1 is a header of an element -->
-    <h1>Stuff What I Learned - HTML</h1>
+    <main>
+      <section class="margins">
+        <div id="text-formatting">
+          <h1>Text Formatting</h1>
+          <h2>Bold Text</h2>
+          <p>
+            You can make text bold by adding a pair of
+            &lt;strong&gt;&lt;/strong&gt; tags around the desired text.
+          </p>
+          <h3>Example:</h3>
+          <p>He was <strong>this</strong> close to scoring a goal!</p>
+          <hr />
+          <h2>Itallics</h2>
+          <p>
+            You can make text itallic by adding a pair of &lt;em&gt;&lt;/em&gt;
+            tags around the desired text.
+          </p>
+          <h3>Example:</h3>
+          <p>He was <em>this</em> close to scoring a goal!</p>
+          <hr />
+          <h2>Underline</h2>
+          <p>
+            You can make text underlined by adding a pair of &lt;u&gt;&lt;/u&gt;
+            tags around the desired text.
+          </p>
+          <h3>Example:</h3>
+          <p>He was <u>this</u> close to scoring a goal!</p>
+          <hr />
+          <h2>Strikethrough</h2>
+          <p>
+            You can make text have a strikethrough by adding a pair of
+            &lt;s&gt;&lt;/s&gt; tags around the desired text.
+          </p>
+          <p>He <s>was this close</s> wasn't even close to scoring a goal!</p>
+          <hr />
+          <h2>Headers</h2>
+          <p>
+            Header tags can be used to create text in various preset sizes, and
+            come with a number of formatting options already applied to them.
+            Use tags &lt;h1&gt;&lt;/h1&gt; to &lt;h6&gt;&lt;/h6&gt; to get the
+            size you want.
+          </p>
+          <h3>Example:</h3>
+          <div class="formatting-exempt">
+            <h1 style="font-size: 2em;">This is h1 text</h1>
+            <h2>This is h2 text</h2>
+            <h3>This is h3 text</h3>
+            <h4>This is h4 text</h4>
+            <h5>This is h5 text</h5>
+            <h6>This is h6 text</h6>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <hr />
+      <section class="margins" id="anchor-tags">
+        <h1>Anchor Tags</h1>
+        <p>
+          Anchor tags allow you to create links to things like external web
+          pages, or even elements within the current page. The nav bar on the
+          left uses anchor tags to navigate up and down the current page,
+          bringing you to whichever header you click on. Anchor tags -
+          &lt;a&gt;&lt;/a&gt; - always contain an 'href' parameter that
+          determines the destination of the element.
+        </p>
 
-    <!-- ul is an unordered list -->
-    <ul class="navList">
-      <!-- li is a list item -->
-      <li> <a href="./index.html"> Home </a> </li>
-      <li> <a href="./HTML.html"> HTML </a> </li>
-      <li> <a href="./CSS.html"> CSS </a> </li>
-      <li> <a href="./JS.html"> JavaScript </a> </li>
-    </ul>
-    <!-- Side navigation -->
-    <div class="sidenav">
-      <a href="#text-formatting-header">Text Formatting</a>
-      <a href="#">Anchor Tags</a>
-      <a href="#">Semantics</a>
-      <a href="#">Placeholder</a>
-    </div>
-  </nav>
-
-  <main>
-
-    <div class="text-formatting-header">
-      <h1>Text Formatting</h1>
-    </div>
-    <div class="text-formatting-body">
-      <h2>Bold Text</h2>
-      <p>You can make text bold by adding a pair of &lt;strong&gt;&lt;/strong&gt; tags around the desired text.</p>
-      <h3>Example:</h3>
-      <p>He was <strong>this</strong> close to scoring a goal!</p>
-      <hr>
-      <h2>Itallics</h2>
-      <p>You can make text itallic by adding a pair of &lt;em&gt;&lt;/em&gt; tags around the desired text.</p>
-      <h3>Example:</h3>
-      <p>He was <em>this</em> close to scoring a goal!</p>
-      <hr>
-      <h2>Underline</h2>
-      <p>You can make text underlined by adding a pair of &lt;u&gt;&lt;/u&gt; tags around the desired text.</p>
-      <h3>Example:</h3>
-      <p>He was <u>this</u> close to scoring a goal!</p>
-      <hr>
-      <h2>Strikethrough</h2>
-      <p>You can make text have a strikethrough by adding a pair of &lt;s&gt;&lt;/s&gt; tags around the desired text.</p>
-      <p>He <s>was this close</s> wasn't even close scoring a goal!</p>
-      <hr>
-      <h2>Headers</h2>
-      <p>Header tags can be used to create text in various preset sizes, and come with a number of formatting options already applied to them. 
-        Use tags &lt;h1&gt;&lt;/h1&gt; to &lt;h6&gt;&lt;/h6&gt; to get the size you want.</p>
-      <h3>Example:</h3>
-      <div class="formatting-exempt">
-        <h1>This is h1 text</h1>
-        <h2>This is h2 text</h2>
-        <h3>This is h3 text</h3>
-        <h4>This is h4 text</h4>
-        <h5>This is h5 text</h5>
-        <h6>This is h6 text</h6>
-      </div>
-    </div>
-    <div class="anchor-tags-header">
-      <h1>Anchor Tags</h1>
-      <p>Anchor tags allow you to </p>
-    </div>
-
-  </main>
-</body>
+        <h3>Example:</h3>
+        <p>&lt;a href="https://www.youtube.com"&gt;YouTube&lt;/a&gt;</p>
+        <p>
+          This code would create this:
+          <a href="https://www.youtube.com">YouTube</a>
+        </p>
+        <br />
+        <p>&lt;a href="#secion-header"&gt;Section Title&lt;/a&gt;</p>
+        <p>
+          This code would create a link that would take you to whatever element
+          had the ID of 'section-header'
+        </p>
+      </section>
+      <hr />
+      <hr />
+      <section class="margins" id="semantics">
+        <h1>Semantics</h1>
+        <p>
+          Over the years, HTML, along with most languages, has evolved. Where we
+          used to just use 'divs' (&lt;div&gt;&lt;/div&gt;), there are now a
+          variety of more descriptive elements we can use to break up our code:
+        </p>
+        <p>
+          <strong>&lt;nav&gt;&lt;/nav&gt;</strong> could be used for describing
+          a navigation bar at the top of the screen.
+        </p>
+        <p>
+          <strong>&lt;main&gt;&lt;/main&gt;</strong> could be used for the
+          section where the most of the information is displayed.
+        </p>
+        <p>
+          <strong>&lt;section&gt;&lt;/section&gt;</strong> could be used to
+          split the main area up into groups of relevant information, usually
+          has a header. This web page is an example, each section separated
+          between two lines is a new section
+        </p>
+        <p>
+          <strong>&lt;article&gt;&lt;/article&gt;</strong> could be used to
+          specify independant, self-contained text such as a blog post.
+        </p>
+        <p>
+          <strong>&lt;footer&gt;&lt;/footer&gt;</strong> could be used to
+          specify where the footer is.
+        </p>
+        <p>
+          <strong>&lt;aside&gt;&lt;/aside&gt;</strong> could be used to specify
+          where a side nav bar lives, or a column at the side where ads may be
+          shown.
+        </p>
+      </section>
+      <hr />
+      <hr />
+      <section class="margins" id="class-id">
+        <h1>Class and ID</h1>
+        <p>
+          You can assign classes and IDs to any HTML element. They are useful to
+          help identify an element or group of elements, so that you can apply
+          specific rules to them later on.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
