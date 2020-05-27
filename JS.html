@@ -1,29 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom style sheets -->
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/nav.css" />
+    <title>JavaScript</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- custom style sheets -->
-  <link rel="stylesheet" href="./assets/styles/nav.css">
-  <link rel="stylesheet" href="./assets/styles/home.css">
-  <title>JavaScript</title>
-</head>
+  <body>
+    <!-- div is a section of a webpage -->
+    <nav>
+      <h1>Stuff What I Learned - JavaScript</h1>
 
-<body>
-  <!-- div is a section of a webpage -->
-  <nav>
-
-    <!-- h1 is a header of an element -->
-    <h1>Stuff What I Learned - JavaScript</h1>
-
-    <!-- ul is an unordered list (bullet points) -->
-    <!-- ol is an ordered list (numbers) -->
-    <ul class="navList">
-      <!-- li is a list item -->
-      <li> <a href="./index.html"> Home </a> </li>
-      <li> <a href="./HTML.html"> HTML </a> </li>
-      <li> <a href="./CSS.html"> CSS </a> </li>
-      <li> <a href="./JS.html"> JavaScript </a> </li>
-    </ul>
-  </nav>
+      <!-- ul is an unordered list -->
+      <ul class="navList">
+        <!-- li is a list item -->
+        <li><a href="./index.html"> Home </a></li>
+        <li><a href="./HTML.html"> HTML </a></li>
+        <li><a href="./CSS.html"> CSS </a></li>
+        <li><a href="./JS.html"> JavaScript </a></li>
+      </ul>
+      <!-- Side navigation -->
+      <aside class="sidenav">
+        <a href="#target-html">Targeting HTML</a>
+        <a href="#data-types">Data Types</a>
+        <a href="#variables">Variables</a>
+        <a href="#assign-compare">Assign / Compare</a>
+        <a href="#event-listeners">Event Listeners</a>
+        <a href="#functions">Functions</a>
+        <a href="#adv-functions">Adv. Functions</a>
+        <a href="#for-loops">For Loops</a>
+        <a href="#jquery">jQuery</a>
+        <a href="ajax">AJAX</a>
+      </aside>
+    </nav>
+    <main>
+      <div class="margins">
+        <section id="target-html">
+          <h1>Targeting HTML Elements</h1>
+        </section>
+        <hr />
+        <hr />
+        <section id="data-types">
+          <h1>Data Types</h1>
+          <h3>String</h3>
+          <hr />
+          <h3>Boolean</h3>
+          <hr />
+          <h3>Integer</h3>
+          <hr />
+          <h3>Float</h3>
+          <hr />
+          <h3>Double</h3>
+          <hr />
+          <h3>Array</h3>
+          <hr />
+          <h3>Object</h3>
+        </section>
+        <hr />
+        <hr />
+        <section id="variables">
+          <h1>Variables</h1>
+        </section>
+        <hr />
+        <hr />
+        <section id="assign-compare">
+          <h1>Assigning vs Comparing</h1>
+        </section>
+        <hr />
+        <hr />
+        <section id="event-listeners">
+          <h1>Event Listeners</h1>
+        </section>
+        <hr />
+        <hr />
+        <section id="functions">
+          <h1>Functions</h1>
+        </section>
+        <hr />
+        <hr />
+        <section id="adv-functions">
+          <h1>Advanced Functions</h1>
+          <p>Arrow Functions - when to and not to use them.</p>
+        </section>
+        <hr />
+        <hr />
+        <section id="for-loops">
+          <h1>For Loops</h1>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

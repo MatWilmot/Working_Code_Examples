@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom style sheets -->
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/nav.css" />
+    <title>CSS</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- custom style sheets -->
-  <link rel="stylesheet" href="./assets/styles/nav.css">
-  <link rel="stylesheet" href="./assets/styles/home.css">
-  <title>CSS</title>
-</head>
+  <body>
+    <!-- div is a section of a webpage -->
+    <nav>
+      <h1>Stuff What I Learned - CSS</h1>
 
-<body>
-  <!-- div is a section of a webpage -->
-  <nav>
-
-    <!-- h1 is a header of an element -->
-    <h1>Stuff What I Learned - CSS</h1>
-
-    <!-- ul is an unordered list -->
-    <ul class="navList">
-      <!-- li is a list item -->
-      <li> <a href="./index.html"> Home </a> </li>
-      <li> <a href="./HTML.html"> HTML </a> </li>
-      <li> <a href="./CSS.html"> CSS </a> </li>
-      <li> <a href="./JS.html"> JavaScript </a> </li>
-    </ul>
-  </nav>
+      <!-- ul is an unordered list -->
+      <ul class="navList">
+        <!-- li is a list item -->
+        <li><a href="./index.html"> Home </a></li>
+        <li><a href="./HTML.html"> HTML </a></li>
+        <li><a href="./CSS.html"> CSS </a></li>
+        <li><a href="./JS.html"> JavaScript </a></li>
+      </ul>
+      <!-- Side navigation -->
+      <aside class="sidenav">
+        <a href="#linking">Linking CSS and HTML</a>
+        <a href="#colors">Colors</a>
+        <a href="#sizing">Sizing</a>
+        <a href="#">Bootstrap</a>
+      </aside>
+    </nav>
+    <main>
+      <div class="margins">
+        <section id="linking">
+          <h1>Connecting the CSS File to HTML</h1>
+        </section>
+        <hr />
+        <hr />
+        <section id="colors">
+          <h1>Setting Colors</h1>
+          <h3>Text Color</h3>
+          <hr />
+          <h3>Background Color</h3>
+        </section>
+        <hr />
+        <hr />
+        <section id="sizing">
+          <h1>Resizing Elements</h1>
+          <h3>Resizing Text</h3>
+          <hr />
+          <h3>Resizing Media</h3>
+        </section>
+        <hr />
+        <hr />
+        <section id="bootstrap">
+          <h1>Targeting HTML Elements</h1>
+        </section>
+        <hr />
+        <hr />
+      </div>
+    </main>
+  </body>
+</html>
